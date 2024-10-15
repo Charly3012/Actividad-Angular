@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Calculadora</h2>
+
+  <form>
+
+    <div class="mb-3">
+      <label for="var1" class="form-label">Variable 1: </label>
+      <input type="number" class="form-control" [(ngModel)]="numero1" name="numero1">
+    </div>
+
+    <div class="mb-3">
+      <label for="var2" class="form-label">Variable 2: </label>
+      <input type="number" class="form-control" [(ngModel)]="numero2" name="numero2">
+    </div>
+  </form>
+  <p>El resultado es: {{resultado}}</p>
+  <button class="btn btn-primary" (click)="suma()">Calcular</button>
+</div>
